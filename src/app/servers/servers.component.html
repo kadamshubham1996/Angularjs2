@@ -1,6 +1,7 @@
 <app-server></app-server>
-
-
+<label>server name</label>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>{{servername}}</p>
 <button class="btn btn-primary" [disabled]="!allowed"  (click)="onCreateServer()">click me</button>
 <p [innerText]="allowed"></p>
 <p>{{serverStaus}}</p>
