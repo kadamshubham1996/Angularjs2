@@ -17,7 +17,7 @@ export class ServersComponent implements OnInit {
     },2000);
    }
   onCreateServer(){
-    this.serverStaus='ServerIsCreated';
+    this.serverStaus='ServerIsCreated'+this.servername;
   }
   ngOnInit() {
   }
