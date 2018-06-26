@@ -4,4 +4,4 @@
 <p>{{servername}}</p>
 <button class="btn btn-primary" [disabled]="!allowed"  (click)="onCreateServer()">click me</button>
 <p [innerText]="allowed"></p>
-<p>{{serverStaus}}</p>
+<p *ngIf="serverdirective">{{serverStaus}}</p>

@@ -11,12 +11,14 @@ export class ServersComponent implements OnInit {
  allowed=false;
  serverStaus='ServerNotCreated';
  servername='';
+ serverdirective=false;
   constructor() {
     setTimeout(() => {
       this.allowed=true;
     },2000);
    }
   onCreateServer(){
+    this.serverdirective=true;
     this.serverStaus='ServerIsCreated'+this.servername;
   }
   ngOnInit() {
