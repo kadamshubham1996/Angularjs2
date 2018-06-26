@@ -1,5 +1,6 @@
 <app-server></app-server>
 
 
-<button class="btn btn-primary" [disabled]="!allowed">click me</button>
+<button class="btn btn-primary" [disabled]="!allowed"  (click)="onCreateServer()">click me</button>
 <p [innerText]="allowed"></p>
+<p>{{serverStaus}}</p>

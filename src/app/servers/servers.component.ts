@@ -9,12 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
  allowed=false;
+ serverStaus='ServerNotCreated';
   constructor() {
     setTimeout(() => {
       this.allowed=true;
     },2000);
    }
-
+  onCreateServer(){
+    this.serverStaus='ServerIsCreated';
+  }
   ngOnInit() {
   }
 
