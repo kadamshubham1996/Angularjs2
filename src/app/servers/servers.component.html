@@ -1,5 +1,4 @@
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
 <label>server name</label>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)">
 <p>{{servername}}</p>
