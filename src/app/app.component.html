@@ -1,8 +1,17 @@
-<div class="container" align="center">
-            <app-servers></app-servers>
-          
+<div class="row">
+    <div class="col-xs-12">
+        <ol>
+            <li>Add Button which say display Details </li>
+            <li>shubham</li>
+            <li>kadam</li>
+        </ol>
+        <hr>
+        <button class="btn btn-primary" (click)="onToggleDetails()">Display Ditails</button>
+        <p *ngIf="showSecret">Select Password =tuna</p>
+        <div *ngFor="let logItem of log"
+        [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+        [ngClass]="{'text-white': logItem >= 5 }" align="center"
+        >{{logItem}}>
+        </div>
+    </div>
 </div>
-
-
-
-
